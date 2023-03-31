@@ -1,0 +1,30 @@
+ #include <stdio.h>
+int main(){
+    int opcao;
+	float peso, altura, idade, resultado, formula;
+    printf("Digite seu peso: ");
+    scanf("%f",&peso);
+    printf("Digite sua altura: ");
+    scanf("%f",&altura);
+    printf("Digite sua idade: ");
+    scanf("%f",&idade);
+    printf("Digite seu nível de atividade física entre 1 a 5: ");
+    scanf("%d",&opcao);
+    formula = 66 + 13.7 * peso + 5 * altura - 6.8 * idade;
+    if(opcao == 1){
+		resultado = formula * 1,2;
+}
+	if(opcao == 2){
+		resultado = formula * 1,375;
+}
+ 	if(opcao == 3){
+ 		resultado = formula * 1,55;
+	 }
+	if(opcao == 4){
+		resultado = formula * 1,725;
+	}
+	if(opcao == 5){
+		resultado = formula * 1,9;
+	}
+    printf("O seu TMB seria aproximadamente: %f",resultado);
+}
